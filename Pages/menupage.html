@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<meta charset="UTF-8" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    	<title>Menu | Pinchofhappiness.com</title>
+    	<link rel="stylesheet" href="../CSS/style.css" />
+    	<link rel="stylesheet" href="../CSS/menu.css" />
+		<link rel="stylesheet" href="../CSS/mini_style.css" />
+		<link rel="stylesheet" media ="screen and (max-width: 1480px)" href="../CSS/menu_phone.css" > 
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+	<script src="../javascript/ordercontrol.js"></script>
+	<link rel="stylesheet" href="../CSS/preloader.css" /><!--css for pre loader-->
+  	</head>
+  
+  <body id="main" onload="load()">
+	 <!--preloader-->
+	 <div id="loader">
+		<h1 id="h1">Just a second..</h1>
+	  <div id="cooking">
+		  <div class="bubble"></div>
+		  <div class="bubble"></div>
+		  <div class="bubble"></div>
+		   <div class="bubble"></div>
+		  <div class="bubble"></div>
+		<div id="area">
+		  <div id="sides">
+			  <div id="pan"></div>
+			  <div id="handle"></div>
+		  </div>
+		  <div id="pancake">
+			<div id="pastry"></div>
+		  </div>
+		</div>
+	  </div>
+  </div>
+<!--script for preloader -->
+  <script>
+	  //pre loader
+	   var preloader = document.getElementById("loader");
+      function load() {
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 1000);
+      }
+  </script>
+  <!--end of preloader-->
+  	<nav id="navbar">
+  		<div class="logo">
+        	<img
+          		src="../Pictures/Logo-3Ev5cA.png"
+          		alt="Pinchofhappiness Logo"
+          		height="75px"
+				width="100px"
+        	/>
+      	</div>
+      	<ul>
+      	  <li class="item"><a href="../index.html">Home</a></li>
+      	  <li class="item"><a href="menupage.html">Special Menu</a></li>
+      	  <li class="item"><a href="about_us.html">About Us</a></li>
+      	  <li class="item"><a href="contactUs.html">Contact Us</a></li>
+      	  <li class="item"><a href="review.html">Reviews</a></li>
+      	</ul>
+    </nav>
+    
+    <section id="course-menu">
+    	<h1 align="center">Menu</h1>
+    	<div class="course">
+    		<center><a href="#northindian">North Indian</a></center>
+    	</div>
+    	<div class="course">
+    		<center><a href="#southindian">South Indian</a></center>
+    	</div>
+    	<div class="course">
+    		<center><a href="#italian">Italian</a></center>
+    	</div>
+    	<div class="course">
+    		<center><a href="#asian">Asian</a></center>
+    	</div>
+    	<div class="course">
+    		<center><a href="#dessert">Desserts & Drinks</a></center>
+    	</div>
+    </section>
+    
+    <section id="northindian" class="course-menu">
+    	<center><div class="course-head">
+    		<a href="#course-menu"><center>North Indian</center></a>
+		</div>
+
+		<img src="../Pictures/Menu Pictures/pavbhaji.PNG" alt="food_item" />	
+    	<div class="item">
+    		Pav bhaji<button class="add" onclick="a(0,0)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/biryani.jpg" alt="food_item" />
+    	<div class="item">
+    		Biryani<button class="add" onclick="a(0,1)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/chole.PNG" alt="food_item" />
+    	<div class="item">
+    		Chole bhature<button class="add" onclick="a(0,2)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/samosa.jpg" alt="food_item" />
+    	<div class="item">
+    		Samosa<button class="add" onclick="a(0,3)">+</button>
+		</div></center>
+		
+    </section>
+    
+    <section id="southindian" class="course-menu">
+
+    	<center><div class="course-head">
+    		<a href="#course-menu"><center>South Indian</center></a>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/dosa.PNG" alt="food_item" />
+    	<div class="item">
+    		Dosa<button class="add" onclick="a(1,0)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/uttapam.PNG" alt="food_item" />
+    	<div class="item">
+    		Uttapamma<button class="add" onclick="a(1,1)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/idli.PNG" alt="food_item" />
+    	<div class="item">
+    		Idli<button class="add" onclick="a(1,2)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/mendu.PNG" alt="food_item" />
+    	<div class="item">
+    		Medu Vada<button class="add" onclick="a(1,3)">+</button>
+    	</div></center>
+    </section>
+    
+    <section id="italian" class="course-menu">
+
+    	<center><div class="course-head">
+    		<a href="#course-menu"><center>Italian</center></a>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/pasta_macroni.PNG" alt="food_item" />
+    	<div class="item">
+    		Pasta Macroli<button class="add" onclick="a(2,0)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/brushetaa.PNG" alt="food_item" />
+    	<div class="item">
+    		Bruschetta<button class="add" onclick="a(2,1)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/pizza1.PNG" alt="food_item" />
+    	<div class="item">
+    		Pizza Margerita<button class="add" onclick="a(2,2)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/pizza2.jpg" alt="food_item" />
+    	<div class="item">
+    		Pizza cappriciossa<button class="add" onclick="a(2,3)">+</button>
+    	</div></center>
+    </section>
+    
+    <section id="asian" class="course-menu">
+
+    	<center><div class="course-head">
+    		<a href="#course-menu"><center>Asian</center></a>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/friedrice.jpg" alt="food_item" />
+    	<div class="item">
+    		Fried rice<button class="add" onclick="a(3,0)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/noodles.jpg" alt="food_item" />
+    	<div class="item">
+    		Noodles<button class="add" onclick="a(3,1)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/manchurian.PNG" alt="food_item" />
+    	<div class="item">
+    		Manchurian<button class="add" onclick="a(3,2)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/kebab.PNG" alt="food_item" />
+    	<div class="item">
+    		Kebab<button class="add" onclick="a(3,3)">+</button>
+		</div></center>
+		
+    </section>
+    
+    <section id="dessert" class="course-menu">
+
+    	<center><div class="course-head">
+    		<a href="#course-menu"><center>Desserts & Drinks</center></a>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/gulabjamun.PNG" alt="food_item" />
+    	<div class="item">
+    		Gulab Jamun<button class="add" onclick="a(4,0)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/rasgulla.PNG" alt="food_item" />
+    	<div class="item">
+    		Rasagulla<button class="add" onclick="a(4,1)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/cheese_cake.PNG" alt="food_item" />
+    	<div class="item">
+    		Cheese Cake<button class="add" onclick="a(4,2)">+</button>
+		</div>
+		
+		<img src="../Pictures/Menu Pictures/hot_chocolate_cake.PNG" alt="food_item" />
+    	<div class="item">
+    		Hot chocolate cake<button class="add" onclick="a(4,3)">+</button>
+		</div></center>
+		
+    </section>
+    
+    <div id="cart" onclick="cartwindow()"><div id="cartvalue"></div></div>
+    
+    <center><button class="btn" onClick="cartwindow()">Order Now</button></center>
+    <footer class="footer-area bg-f">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-3 col-md-6">
+			  <h3>About Us</h3>
+			  <p>
+				Life’s too short for boring food, So Enjoy the Indian delicacies here.
+				We’re always in the mood for food to serve you Delight in every bite. 
+			  </p>
+			</div>
+			<div class="col-lg-3 col-md-6">
+			  <h3>Subscribe</h3>
+			  <div class="subscribe_form">
+				<form class="subscribe_form">
+				  <input
+					name="EMAIL"
+					id="subs-email"
+					class="form_input"
+					placeholder="Email Address..."
+					type="email"
+				  />
+				  <button type="submit" class="submit">SUBSCRIBE</button>
+				  <div class="clearfix"></div>
+				</form>
+			  </div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+			  <h3>Contact information</h3>
+			  <p class="lead">Near xyz buliding ABC road</p>
+			  <p class="lead"><a href="#">+91 954 623 7453</a></p>
+			  <p><a href="#"> info@pinchofhappiness.com</a></p>
+			</div>
+			<div class="col-lg-3 col-md-6">
+			  <h3>Opening hours</h3>
+			  <p><span class="text-color">Monday: </span>Closed</p>
+			  <p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
+			  <p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+			  <p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+			</div>
+		  </div>
+		</div>
+  
+		<div class="copyright">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-lg-12">
+				<p class="company-name">
+				  All Rights Reserved. &copy; 2020
+				  <a href="#">pinchofhappiness</a> Design By :
+				  <a href="#">webdevlopment_Students</a>
+				</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+  </body>
+</html>
